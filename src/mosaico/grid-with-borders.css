@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/06/2019, 10:39:26
+    Author     : CltControl
+*/
+.root {
+-fx-padding: 20 ;
+cell-color: white ;
+cell-border-color: black ;
+cell-colorRelleno: blue;
+cell-colorOtros:red;
+}
+.grid {
+/* 1 pixel border around the top and right of the grid: */
+-fx-background-color: cell-border-color, cell-color ;
+-fx-background-insets: 0, 1 1 0 0 ;
+-fx-padding: 1 ;
+-fx-grid-lines-visible: true;
+}
+.cell {
+/* 1 pixel border around the left and bottom of each cell: */
+-fx-background-color: cell-border-color, cell-color ;
+-fx-background-insets: 0, 0 0 1 1 ;
+}
+.cuadro {
+/* 1 pixel border around the left and bottom of each cell: */
+-fx-background-color: cell-border-color, cell-colorRelleno ;
+-fx-background-insets: 0, 0 0 1 1 ;
+}
+
+.cuadroJuego {
+/* 1 pixel border around the left and bottom of each cell: */
+-fx-background-color: cell-border-color, cell-colorOtros ;
+-fx-background-insets: 0, 0 0 1 1 ;
+}
